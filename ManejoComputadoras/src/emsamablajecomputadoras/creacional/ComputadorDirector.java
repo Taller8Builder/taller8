@@ -7,5 +7,16 @@ public class ComputadorDirector {
 		this.builder = builder;
 	}
 	
-	public void 
+	public void ConstruirComputador() {
+		//orden de proceso de construccion
+		builder.definirCaracteristicas();
+		builder.definirModelo();
+		builder.construirMainboard();
+		builder.definirSO();
+	}
+	
+	public Computador GetComputador() {
+		return builder.getComputador();
+	}
+	
 }
